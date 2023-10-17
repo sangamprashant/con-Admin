@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import html2canvas from "html2canvas";
 import { saveAs } from "file-saver";
+import icon from "./image/icon.jpg"
 
 function FORM({ setIsLogged }) {
   const [formData, setFormData] = useState([]);
@@ -110,7 +111,7 @@ function FORM({ setIsLogged }) {
                     <a className="inline-flex items-center">
                       <img
                         alt="blog"
-                        src="https://dummyimage.com/104x104"
+                        src={icon}
                         className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                       />
                       <span className="flex-grow flex flex-col pl-4">
